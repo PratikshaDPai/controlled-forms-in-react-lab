@@ -14,9 +14,9 @@ export default function BookShelf() {
     setBooks(newBooks);
   }
 
-  const handleChange = ({ target }) => {
+  function handleChange({ target }) {
     setFormData({ ...formData, [target.name]: target.value });
-  };
+  }
 
   return (
     <div className="bookshelfDiv">
